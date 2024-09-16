@@ -39,3 +39,15 @@ do
 } while (k <= 10);
 Console.WriteLine();
 Console.WriteLine();
+
+Console.WriteLine("A random number between 1 and 10 is generated. An if-else statement checks if a number is even or odd, and outputs the result:");
+Random rnd = new Random();
+int number = rnd.Next(1, 11);
+if (number % 2 == 0)
+{
+    Console.WriteLine($"{number} is an even number");
+}
+else
+{
+    Console.WriteLine($"{number} is an odd number");
+}
