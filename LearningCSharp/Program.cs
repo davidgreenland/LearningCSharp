@@ -43,7 +43,8 @@ Console.WriteLine("For each number in an array, a method checks if the number is
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 foreach (var number in numberSet)
 {
-    Console.WriteLine($"{number} is an {(IsEven(number) ? "even" : "odd")} number.");
+    var isEven = IsEven(number);
+    Console.WriteLine($"{number} is an {(isEven ? "even" : "odd")} number.");
 }
 
 static bool IsEven(int number) => number % 2 == 0;
