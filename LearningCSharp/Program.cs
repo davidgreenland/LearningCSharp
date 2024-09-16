@@ -39,15 +39,11 @@ do
 Console.WriteLine();
 Console.WriteLine();
 
-Console.WriteLine("A random number between 1 and 10 is generated.");
-Console.WriteLine("An if-else statement checks if a number is even or odd, and outputs the result:");
-var rnd = new Random();
-var number = rnd.Next(1, 11);
-if (number % 2 == 0)
+Console.WriteLine("For each number in an array, a method checks if the number is even or odd and prints the result:");
+var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
+foreach (var number in numberSet)
 {
-    Console.WriteLine($"{number} is an even number.");
+    Console.WriteLine($"{number} is an {(IsEven(number) ? "even" : "odd")} number.");
 }
-else
-{
-    Console.WriteLine($"{number} is an odd number.");
-}
+
+static bool IsEven(int number) => number % 2 == 0;
