@@ -30,20 +30,19 @@ Console.WriteLine();
 Console.WriteLine();
 
 Console.WriteLine("The following numbers are printed with a do-while loop:");
-
-var k = 1;
+j = 1;
 do
 {
-    Console.Write($"{k} ");
-    k++;
-} while (k <= 10);
+    Console.Write($"{j} ");
+    j++;
+} while (j <= 10);
 Console.WriteLine();
 Console.WriteLine();
 
 Console.WriteLine("A random number between 1 and 10 is generated.");
 Console.WriteLine("An if-else statement checks if a number is even or odd, and outputs the result:");
-Random rnd = new Random();
-int number = rnd.Next(1, 11);
+var rnd = new Random();
+var number = rnd.Next(1, 11);
 if (number % 2 == 0)
 {
     Console.WriteLine($"{number} is an even number.");
