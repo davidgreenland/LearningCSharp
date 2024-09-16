@@ -23,3 +23,11 @@ while (j <= 10)
     j++;
 }
 Console.WriteLine();
+
+var k = 1;
+do
+{
+    Console.Write($"{k} ");
+    k++;
+} while (k <= 10);
+Console.WriteLine();
