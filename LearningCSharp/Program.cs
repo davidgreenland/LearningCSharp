@@ -15,3 +15,11 @@ for (var i = 1; i <= 10; ++i)
 {
     Console.WriteLine(i);
 }
+
+var j = 1;
+while (j <= 10)
+{
+    Console.Write($"{j} ");
+    j++;
+}
+Console.WriteLine();
