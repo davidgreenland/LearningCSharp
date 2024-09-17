@@ -4,13 +4,13 @@ var name = "Abdullah";
 var isWarm = false;
 var timeToString = time.ToString("N2");
 var todaysDate = DateTime.Now;
-
 var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDate]);
+
 PrintDefinitions(objects);
 ForLoopDemonstration(5);
 WhileLoopDemonstration(1, 19, 2);
 DoWhileLoopDemonstration(1, 10);
-DoWhileLoopDemonstration(1, 30, 3);
+DoWhileLoopDemonstration(0, 30, 3);
 
 
 Console.WriteLine("For each number in an array, a method checks if the number is even or odd and prints the result:");
@@ -66,12 +66,12 @@ void WhileLoopDemonstration(int start, int end, int increment)
 void DoWhileLoopDemonstration(int start, int end, int increment = 1)
 {
     Console.WriteLine($"The following numbers are printed with a do-while loop{(increment != 1 ? $", incrementing by {increment}" : "")}:");
-    var i = 1;
+    var i = start;
     do
     {
         Console.Write($"{i} ");
         i += increment;
-    } while (i <= 10);
+    } while (i <= end);
     Console.WriteLine();
     Console.WriteLine();
 }
