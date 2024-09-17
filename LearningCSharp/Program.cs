@@ -3,8 +3,9 @@ var time = 13.0;
 var name = "Abdullah";
 var isWarm = false;
 var timeToString = time.ToString("N2");
+var todaysDate = DateTime.Now;
 
-var objects = new List<object>([year, time, name, isWarm, timeToString]);
+var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDate]);
 PrintDefinitions(objects);
 
 Console.WriteLine("The following numbers are printed with a for loop:");
@@ -61,6 +62,6 @@ string CheckType(object input)
         return "a string";
     if (input is System.Boolean)
         return "a boolean";
-    return input.GetType().ToString();
+    return $"a {input.GetType().ToString()}";
 }
 bool IsEven(int number) => number % 2 == 0;
