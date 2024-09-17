@@ -1,5 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
-
+﻿PrintMessage("Hello, World!");
 var year = 2024;
 var time = 0.0;
 var name = "Abdullah";
@@ -46,5 +45,5 @@ foreach (var number in numberSet)
     var isEven = IsEven(number);
     Console.WriteLine($"{number} is an {(isEven ? "even" : "odd")} number.");
 }
-
-static bool IsEven(int number) => number % 2 == 0;
+void PrintMessage(string message) => Console.WriteLine(message);
+bool IsEven(int number) => number % 2 == 0;
