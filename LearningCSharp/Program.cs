@@ -8,19 +8,11 @@ var todaysDate = DateTime.Now;
 var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDate]);
 PrintDefinitions(objects);
 ForLoopDemonstration(5);
+WhileLoopDemonstration(1, 19, 2);
 
-Console.WriteLine("The following numbers are printed with a while loop:");
-var j = 1;
-while (j <= 10)
-{
-    Console.Write($"{j} ");
-    j++;
-}
-Console.WriteLine();
-Console.WriteLine();
 
 Console.WriteLine("The following numbers are printed with a do-while loop:");
-j = 1;
+var j = 1;
 do
 {
     Console.Write($"{j} ");
@@ -65,6 +57,18 @@ void ForLoopDemonstration(int length)
     {
         Console.WriteLine(i);
     }
+    Console.WriteLine();
+}
+void WhileLoopDemonstration(int start, int end, int increment)
+{
+    Console.WriteLine($"Using a while loop, a list of all numbers starting at {start}, incrementing by {increment}, ending at {end}:");
+    var j = start;
+    while (j <= end)
+    {
+        Console.Write($"{j} ");
+        j += increment;
+    }
+    Console.WriteLine();
     Console.WriteLine();
 }
 bool IsEven(int number) => number % 2 == 0;
