@@ -1,15 +1,11 @@
-﻿PrintMessage("Hello, World!");
-var year = 2024;
-var time = 0.0;
+﻿var year = 2024;
+var time = 13.0;
 var name = "Abdullah";
 var isWarm = false;
 var timeToString = time.ToString("N2");
 
-Console.WriteLine($"This is an integer value: {year}");
-Console.WriteLine($"This is a double value: {timeToString}");
-Console.WriteLine($"This is a string value: {name}");
-Console.WriteLine($"This is a boolean value: {isWarm}");
-Console.WriteLine();
+var objects = new List<object>([year, time, name, isWarm, timeToString]);
+PrintDefinitions(objects);
 
 Console.WriteLine("The following numbers are printed with a for loop:");
 for (var i = 1; i <= 10; ++i)
@@ -45,5 +41,26 @@ foreach (var number in numberSet)
     var isEven = IsEven(number);
     Console.WriteLine($"{number} is an {(isEven ? "even" : "odd")} number.");
 }
-void PrintMessage(string message) => Console.WriteLine(message);
+void PrintDefinitions(List<object> inputs)
+{
+    foreach (var input in inputs)
+    {
+        Console.WriteLine(GetDefinitionOfInput(input));
+    }
+    Console.WriteLine();
+}
+
+string GetDefinitionOfInput(object input) => $"This is {CheckType(input)} value: {input}";
+string CheckType(object input)
+{
+    if (input is System.Int32)
+        return "an integer";
+    if (input is System.Double)
+        return "a double";
+    if (input is System.String)
+        return "a string";
+    if (input is System.Boolean)
+        return "a boolean";
+    return input.GetType().ToString();
+}
 bool IsEven(int number) => number % 2 == 0;
