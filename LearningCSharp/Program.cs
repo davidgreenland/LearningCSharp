@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using LearningCSharp;
+
+Console.WriteLine("Hello, World!");
 
 var year = 2024;
 var time = 0.0;
@@ -51,3 +53,7 @@ else
 {
     Console.WriteLine($"{number} is an odd number.");
 }
+Console.WriteLine();
+
+var person = new Person("Dorothy", 32);
+person.Greet();
