@@ -1,6 +1,7 @@
-﻿var year = 2024;
+﻿var name = "Abdullah";
+Greet(name);
+var year = 2024;
 var time = 13.0;
-var name = "Abdullah";
 var isWarm = false;
 var timeToString = time.ToString("N2");
 var todaysDate = DateTime.Now;
@@ -12,6 +13,11 @@ DoWhileLoopDemonstration(1, 10);
 DoWhileLoopDemonstration(0, 30, 3);
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 CheckIfEven(numberSet);
+
+void Greet(string name)
+{
+    Console.WriteLine($"Hello, {name}!");
+}
 
 void PrintDefinitions(List<object> inputs)
 {
