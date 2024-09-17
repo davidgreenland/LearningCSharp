@@ -1,17 +1,18 @@
-﻿var name = "Abdullah";
-Greet(name);
+﻿const string NAME = "Abdullah";
 var year = 2024;
 var time = 13.0;
 var isWarm = false;
 var timeToString = time.ToString("N2");
 var todaysDate = DateTime.Now;
-var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDate]);
+var objects = new List<object>([year, time, NAME, isWarm, timeToString, todaysDate]);
+var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
+
+Greet(NAME);
 PrintDefinitions(objects);
 ForLoopDemonstration(5);
 WhileLoopDemonstration(1, 19, 2);
 DoWhileLoopDemonstration(1, 10);
 DoWhileLoopDemonstration(0, 30, 3);
-var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 CheckIfEven(numberSet);
 
 void Greet(string name)
@@ -19,7 +20,7 @@ void Greet(string name)
     Console.WriteLine($"Hello, {name}!");
 }
 
-void PrintDefinitions(List<object> inputs)
+void PrintDefinitions(IEnumerable<object> inputs)
 {
     foreach (var input in inputs)
     {
@@ -28,19 +29,30 @@ void PrintDefinitions(List<object> inputs)
     Console.WriteLine();
 }
 
-string GetDefinitionOfInput(object input) => $"This is {CheckType(input)} value: {input}";
-
-string CheckType(object input)
+string GetDefinitionOfInput(object input)
 {
-    if (input is System.Int32)
-        return "an integer";
-    if (input is System.Double)
-        return "a double";
-    if (input is System.String)
-        return "a string";
-    if (input is System.Boolean)
-        return "a boolean";
-    return $"a {input.GetType().ToString()}";
+    var checkType = string.Empty;
+
+    switch (input)
+    {
+        case int _:
+            checkType = "an integer";
+            break;
+        case double:
+            checkType = "a double";
+            break;
+        case bool:
+            checkType = "a boolean";
+            break;
+        case string:
+            checkType = "a string";
+            break;
+        default:
+            checkType = $"a {input.GetType().ToString()}";
+            break;
+    }
+
+    return $"This is {checkType} value: {input}";
 }
 
 void ForLoopDemonstration(int length)
