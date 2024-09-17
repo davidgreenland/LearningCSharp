@@ -7,13 +7,7 @@ var todaysDate = DateTime.Now;
 
 var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDate]);
 PrintDefinitions(objects);
-
-Console.WriteLine("The following numbers are printed with a for loop:");
-for (var i = 1; i <= 10; ++i)
-{
-    Console.WriteLine(i);
-}
-Console.WriteLine();
+ForLoopDemonstration(5);
 
 Console.WriteLine("The following numbers are printed with a while loop:");
 var j = 1;
@@ -63,5 +57,14 @@ string CheckType(object input)
     if (input is System.Boolean)
         return "a boolean";
     return $"a {input.GetType().ToString()}";
+}
+void ForLoopDemonstration(int length)
+{
+    Console.WriteLine("The following numbers are printed with a for loop:");
+    for (var i = 1; i <= length; ++i)
+    {
+        Console.WriteLine(i);
+    }
+    Console.WriteLine();
 }
 bool IsEven(int number) => number % 2 == 0;
