@@ -9,17 +9,9 @@ var objects = new List<object>([year, time, name, isWarm, timeToString, todaysDa
 PrintDefinitions(objects);
 ForLoopDemonstration(5);
 WhileLoopDemonstration(1, 19, 2);
+DoWhileLoopDemonstration(1, 10);
+DoWhileLoopDemonstration(1, 30, 3);
 
-
-Console.WriteLine("The following numbers are printed with a do-while loop:");
-var j = 1;
-do
-{
-    Console.Write($"{j} ");
-    j++;
-} while (j <= 10);
-Console.WriteLine();
-Console.WriteLine();
 
 Console.WriteLine("For each number in an array, a method checks if the number is even or odd and prints the result:");
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
@@ -68,6 +60,18 @@ void WhileLoopDemonstration(int start, int end, int increment)
         Console.Write($"{j} ");
         j += increment;
     }
+    Console.WriteLine();
+    Console.WriteLine();
+}
+void DoWhileLoopDemonstration(int start, int end, int increment = 1)
+{
+    Console.WriteLine($"The following numbers are printed with a do-while loop{(increment != 1 ? $", incrementing by {increment}" : "")}:");
+    var i = 1;
+    do
+    {
+        Console.Write($"{i} ");
+        i += increment;
+    } while (i <= 10);
     Console.WriteLine();
     Console.WriteLine();
 }
