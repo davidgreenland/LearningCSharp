@@ -1,4 +1,6 @@
-﻿const string NAME = "Abdullah";
+﻿using LearningCSharp;
+
+const string NAME = "Abdullah";
 var year = 2024;
 var time = 13.0;
 var isWarm = false;
@@ -6,6 +8,7 @@ var timeToString = time.ToString("N2");
 var todaysDate = DateTime.Now;
 var objects = new List<object>([year, time, NAME, isWarm, timeToString, todaysDate]);
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
+var person = new Person("Philippa", 30);
 
 Greet(NAME);
 PrintDefinitions(objects);
@@ -14,6 +17,7 @@ WhileLoopDemonstration(1, 19, 2);
 DoWhileLoopDemonstration(1, 10);
 DoWhileLoopDemonstration(0, 30, 3);
 CheckIfEven(numberSet);
+person.Greet();
 
 void Greet(string name)
 {
