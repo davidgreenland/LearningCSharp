@@ -10,14 +10,15 @@ var objects = new List<object>([year, time, NAME, isWarm, timeToString, todaysDa
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 var person = new Person("Philippa", 30);
 
-Greet(NAME);
-PrintDefinitions(objects);
-ForLoopDemonstration(5);
-WhileLoopDemonstration(1, 19, 2);
-DoWhileLoopDemonstration(1, 10);
-DoWhileLoopDemonstration(0, 30, 3);
-CheckIfEven(numberSet);
+//Greet(NAME);
+//PrintDefinitions(objects);
+//ForLoopDemonstration(5);
+//WhileLoopDemonstration(1, 19, 2);
+//DoWhileLoopDemonstration(1, 10);
+//DoWhileLoopDemonstration(0, 30, 3);
+//CheckIfEven(numberSet);
 person.Greet();
+Console.WriteLine(person.Age);
 
 void Greet(string name)
 {

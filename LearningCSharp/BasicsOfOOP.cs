@@ -8,18 +8,32 @@ namespace LearningCSharp;
 
 public class Person
 {
-    public string Name;
-    public int Age;
+    public readonly string Name;
+    private int _age;
+
+    public int Age
+    {
+        get
+        {
+            return _age;
+        }
+        private set
+        {
+            if (value > 0)
+            {
+                _age = value;
+            }
+        }
+    }
 
     public Person(string name, int age)
     {
+        if (age < 0) throw new ArgumentException("Age cannot be negative");
         Name = name;
-        Age = age;
+        _age = age;
+
     }
 
-    public void Greet()
-    {
-        Console.WriteLine($"Hello {Name}.");
-    }
+    public void Greet() => Console.WriteLine($"Hello {Name}.");
 }
 
