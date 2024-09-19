@@ -1,64 +1,23 @@
 ﻿using LearningCSharp;
 
-const string NAME = "Abdullah";
+var person = new Person("Philippa", 30);
 var year = 2024;
 var time = 13.0;
 var isWarm = false;
+var letter = 'y';
 var timeToString = time.ToString("N2");
 var todaysDate = DateTime.Now;
-var objects = new List<object>([year, time, NAME, isWarm, timeToString, todaysDate]);
+var objects = new List<object>([year, time, letter, isWarm, timeToString, todaysDate]);
+var nativeVariables = new NativeVariables(objects);
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
-var person = new Person("Philippa", 30);
 
-//Greet(NAME);
-//PrintDefinitions(objects);
-//ForLoopDemonstration(5);
-//WhileLoopDemonstration(1, 19, 2);
-//DoWhileLoopDemonstration(1, 10);
-//DoWhileLoopDemonstration(0, 30, 3);
-//CheckIfEven(numberSet);
 person.Greet();
-Console.WriteLine(person.Age);
-
-void Greet(string name)
-{
-    Console.WriteLine($"Hello, {name}!");
-}
-
-void PrintDefinitions(IEnumerable<object> inputs)
-{
-    foreach (var input in inputs)
-    {
-        Console.WriteLine(GetDefinitionOfInput(input));
-    }
-    Console.WriteLine();
-}
-
-string GetDefinitionOfInput(object input)
-{
-    var checkType = string.Empty;
-
-    switch (input)
-    {
-        case int _:
-            checkType = "an integer";
-            break;
-        case double:
-            checkType = "a double";
-            break;
-        case bool:
-            checkType = "a boolean";
-            break;
-        case string:
-            checkType = "a string";
-            break;
-        default:
-            checkType = $"a {input.GetType().ToString()}";
-            break;
-    }
-
-    return $"This is {checkType} value: {input}";
-}
+nativeVariables.PrintDefinitions();
+ForLoopDemonstration(5);
+WhileLoopDemonstration(1, 19, 2);
+DoWhileLoopDemonstration(1, 10);
+DoWhileLoopDemonstration(0, 30, 3);
+CheckIfEven(numberSet);
 
 void ForLoopDemonstration(int length)
 {
