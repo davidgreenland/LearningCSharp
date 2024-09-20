@@ -20,4 +20,7 @@ LoopDemonstration.DoWhileLoop(1, 10);
 LoopDemonstration.DoWhileLoop(0, 30, 3);
 Utils.CheckIfEven(numberSet);
 
+person.Age = -10;
+Console.WriteLine(person.Age); // still 30
+
 return;

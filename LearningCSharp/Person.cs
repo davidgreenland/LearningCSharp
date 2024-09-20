@@ -3,12 +3,24 @@
 public class Person
 {
     public string Name { get; set; }
-    public int Age { get; set; }
+
+    private int _age;
+    public int Age
+    {
+        get => _age;
+        set
+        {
+            if (value > 0)
+            {
+                _age = value;
+            }
+        } 
+      }
 
     public Person(string name, int age)
     {
         Name = name;
-        Age = age;
+        _age = age;
     }
 
     public void Greet() =>
