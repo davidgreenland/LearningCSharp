@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace LearningCSharp;
+﻿namespace LearningCSharp;
 
 public class NativeVariables
 {
@@ -20,7 +18,7 @@ public class NativeVariables
         Console.WriteLine();
     }
 
-    string GetDefinitionOfVariable(object variable)
+    private string GetDefinitionOfVariable(object variable)
     {
         var checkType = string.Empty;
 
