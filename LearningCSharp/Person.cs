@@ -11,8 +11,6 @@ public class Person
         Age = age;
     }
 
-    public void Greet()
-    {
+    public void Greet() =>
         Console.WriteLine($"Pleased to meet you. I'm {Name}.");
-    }
 }

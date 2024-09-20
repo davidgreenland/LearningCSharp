@@ -1,6 +1,6 @@
 ﻿namespace LearningCSharp;
 
-public class LoopDemonstration
+public static class LoopDemonstration
 {
     public static void ForLoop(int length)
     {

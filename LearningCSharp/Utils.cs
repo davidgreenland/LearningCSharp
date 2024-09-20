@@ -1,6 +1,6 @@
 ﻿namespace LearningCSharp;
 
-public class Utils
+public static class Utils
 {
     public static void CheckIfEven(int[] numbers)
     {
