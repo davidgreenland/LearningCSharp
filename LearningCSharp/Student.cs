@@ -10,7 +10,14 @@ class Student : Person
 
     public override void Greet()
     {
-        base.Greet();
-        Console.WriteLine("I am in Year" + " " + YearGroup);
+        Console.WriteLine($"I am a student in Year {YearGroup}. My Name is {Name}. I have {HairColour} hair");
+    }
+}
+
+class Ginger : Student
+{
+    public Ginger(string name, int age, int yearGroup) : base(name, age, yearGroup)
+    {
+        HairColour = "ginger";
     }
 }

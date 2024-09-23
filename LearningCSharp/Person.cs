@@ -4,6 +4,8 @@ public class Person
 {
     public string Name { get; set; }
 
+    protected string HairColour = "brown";
+
     private int _age;
     public int Age
     {
