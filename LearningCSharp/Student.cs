@@ -3,6 +3,7 @@
 class Student : Person
 {
     public int YearGroup { get; protected set; }
+    public List<string> SubjectChoices { get; set; } = new List<string>();
     public Student(string name, int age, int yearGroup) : base(name, age)
     {
         YearGroup = yearGroup;

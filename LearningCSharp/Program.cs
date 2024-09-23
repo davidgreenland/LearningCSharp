@@ -28,5 +28,6 @@ person.Age = -10;
 Console.WriteLine(person.Age); // still 30
 student.Greet();
 ginger.Greet();
+ginger.SubjectChoices.Add("Art and design");
 
 return;
