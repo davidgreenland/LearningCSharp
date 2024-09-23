@@ -27,6 +27,9 @@ public class NativeVariables
             case int _:
                 checkType = "an integer";
                 break;
+            case float _:
+                checkType = "a float";
+                break;
             case double:
                 checkType = "a double";
                 break;

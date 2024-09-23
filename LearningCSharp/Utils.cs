@@ -10,6 +10,7 @@ public static class Utils
             var isEven = IsEven(number);
             Console.WriteLine($"{number} is an {(isEven ? "even" : "odd")} number.");
         }
+        Console.WriteLine();
     }
 
     private static bool IsEven(int number) => number % 2 == 0;
