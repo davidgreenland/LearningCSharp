@@ -22,7 +22,7 @@ public class Person
     public Person(string name, int age)
     {
         Name = name;
-        _age = age;=///*KKKkkkKKKK;;;''''###
+        _age = age;
     }
 
     public virtual void Greet() =>
