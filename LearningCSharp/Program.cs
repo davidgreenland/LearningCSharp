@@ -14,6 +14,7 @@ var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 var person = new Person("Philippa", 30);
 var student = new Student("James", 14, 10);
 var ginger = new Ginger("Rosanne", 12, 9);
+var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
 var nativeVariables = new NativeVariables(objects);
 
 nativeVariables.PrintDefinitions();
@@ -29,5 +30,6 @@ Console.WriteLine(person.Age); // still 30
 student.Greet();
 ginger.Greet();
 ginger.SubjectChoices.Add("Art and design");
+teacher.Greet();
 
 return;

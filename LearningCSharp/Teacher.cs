@@ -8,4 +8,9 @@ class Teacher: Person
     {
         Department = department;
     }
+
+    public override void Greet()
+    {
+        Console.WriteLine($"Hello, my name is {Name}. I work in the {Department} department.");
+    }
 }
