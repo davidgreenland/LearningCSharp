@@ -1,5 +1,6 @@
 ﻿using LearningCSharp;
 
+var person = new Person("Philippa", 30);
 var year = 2024;
 var binaryLiteral = 0b_0010_1010;
 var floatingPoint = 5.4f;
@@ -16,6 +17,7 @@ var student = new Student("James", 14, 10);
 var ginger = new Ginger("Rosanne", 12, 9);
 var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
 var nativeVariables = new NativeVariables(objects);
+var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 
 nativeVariables.PrintDefinitions();
 LoopDemonstration.ForLoop(5);
