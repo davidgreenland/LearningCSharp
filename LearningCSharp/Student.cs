@@ -1,6 +1,6 @@
 ﻿using LearningCSharp;
 
-class Student : Person
+public class Student : Person
 {
     public int YearGroup { get; protected set; }
     public List<string> SubjectChoices { get; set; } = new List<string>();
