@@ -1,4 +1,4 @@
-﻿public class Ginger : Student
+﻿public class Ginger : Student, IGreetable
 {
     public Ginger(string name, int age, int yearGroup) : base(name, age, yearGroup)
     {

@@ -1,10 +1,10 @@
 ﻿namespace LearningCSharp;
 
-public class Person
+public class Person: IGreetable
 {
     public string Name { get; set; }
 
-    protected string? HairColour = null;
+    protected string HairColour = "not provided";
 
     private int _age;
     public int Age

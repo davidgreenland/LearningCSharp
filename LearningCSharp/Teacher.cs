@@ -1,6 +1,6 @@
 ﻿using LearningCSharp;
 
-public class Teacher : Person
+public class Teacher : Person, IGreetable
 {
     public string Department { get; protected set; }
 

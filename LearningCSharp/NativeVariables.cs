@@ -30,6 +30,9 @@ public class NativeVariables
             case double:
                 checkType = "a double";
                 break;
+            case float:
+                checkType = "a float";
+                break;
             case bool:
                 checkType = "a boolean";
                 break;
@@ -40,7 +43,7 @@ public class NativeVariables
                 checkType = "a char";
                 break;
             default:
-                checkType = $"a {variable.GetType().ToString()}";
+                checkType = $"a {variable.GetType()}";
                 break;
         }
 
