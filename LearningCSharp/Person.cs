@@ -22,7 +22,7 @@ public class Person: IGreetable
     public Person(string name, int age)
     {
         Name = name;
-        _age = age;
+        Age = age;
     }
 
     public virtual void Greet() =>
