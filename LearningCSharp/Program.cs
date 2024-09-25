@@ -17,9 +17,9 @@ var numericVariables = new NativeVariables(numericValues);
 var moreVariables = new NativeVariables(otherObjects);
 var adult = new Person("Philippa", 30);
 var student = new Student("James", 14, 10);
-var ginger = new Ginger("Rosanne", 12, 9);
+var gingerStudent = new Ginger("Rosanne", 12, 9);
 var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
-var people = new Person[] { adult, student, ginger, teacher };
+var people = new Person[] { adult, student, gingerStudent, teacher };
 
 numericVariables.PrintDefinitions();
 moreVariables.PrintDefinitions();
@@ -30,8 +30,8 @@ LoopDemonstration.DoWhileLoop(0, 30, 3);
 Utils.CheckIfEven(numberSet);
 
 adult.Age = -10;
-Console.WriteLine(adult.Age); // still 30
-ginger.SubjectChoices.Add("Art and design");
+Console.WriteLine($"{adult.Name}'s age is {adult.Age}");
+gingerStudent.SubjectChoices.Add("Art and design");
 foreach (var person in people)
 {
     person.Greet();
