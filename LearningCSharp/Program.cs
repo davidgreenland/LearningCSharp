@@ -19,7 +19,8 @@ var adult = new Person("Philippa", 30);
 var student = new Student("James", 14, 10);
 var gingerStudent = new Ginger("Rosanne", 12, 9);
 var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
-var people = new IGreetable[] { adult, student, gingerStudent, teacher };
+var terminator = new Cyborg("Arnold", 1985, "T1000");
+var people = new IGreetable[] { adult, student, gingerStudent, teacher, terminator };
 
 numericVariables.PrintDefinitions();
 moreVariables.PrintDefinitions();
@@ -34,7 +35,7 @@ Console.WriteLine($"{adult.Name}'s age is {adult.Age}");
 gingerStudent.SubjectChoices.Add("Art and design");
 foreach (var person in people)
 {
-    person.Greet();
+    person.Greet(); 
 }
 
 return;
