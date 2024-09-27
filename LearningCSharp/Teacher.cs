@@ -1,7 +1,7 @@
 ﻿using LearningCSharp;
 
-public class Teacher : Person, IGreetable
-{
+public class Teacher : Person
+{ 
     public string Department { get; protected set; }
 
     public Teacher(string name, int age, string department) : base(name, age)
@@ -11,6 +11,6 @@ public class Teacher : Person, IGreetable
 
     public override void Greet()
     {
-        Console.WriteLine($"Hello, my name is {Name}. I work in the {Department} department.");
+        Greeter.Greet($"Hello, my name is {Name}. I work in the {Department} department.");
     }
 }

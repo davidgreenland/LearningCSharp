@@ -1,6 +1,6 @@
 ﻿using LearningCSharp;
 
-public class Student : Person, IGreetable
+public class Student : Person
 {
     public int YearGroup { get; protected set; }
     public List<string> SubjectChoices { get; set; } = new List<string>();
@@ -12,6 +12,6 @@ public class Student : Person, IGreetable
 
     public override void Greet()
     {
-        Console.WriteLine($"My Name is {Name}. I am a student in Year {YearGroup}.");
+        Greeter.Greet($"My Name is {Name}. I am a student in Year {YearGroup}.");
     }
 }
