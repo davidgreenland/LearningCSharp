@@ -1,4 +1,4 @@
-﻿using LearningCSharp;
+﻿namespace LearningCSharp;
 
 public class Ginger : Student
 {
