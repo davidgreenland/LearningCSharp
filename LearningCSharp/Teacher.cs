@@ -1,6 +1,6 @@
-﻿using LearningCSharp;
+﻿namespace LearningCSharp;
 
-public class Teacher : Person, IGreetable
+public class Teacher : Person
 {
     public string Department { get; protected set; }
 

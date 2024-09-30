@@ -1,6 +1,6 @@
-﻿using LearningCSharp;
+﻿namespace LearningCSharp;
 
-public class Student : Person, IGreetable
+public class Student : Person
 {
     public int YearGroup { get; protected set; }
     public List<string> SubjectChoices { get; set; } = new List<string>();

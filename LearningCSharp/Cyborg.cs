@@ -1,4 +1,6 @@
-﻿public class Cyborg: IGreetable
+﻿using LearningCSharp;
+
+public class Cyborg: IGreetable
 {
     public string Name { get; private set; }
     public int YearOfManufacture { get; private set; } = DateTime.Now.Year;
