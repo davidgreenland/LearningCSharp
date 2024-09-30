@@ -1,4 +1,6 @@
-﻿public class Ginger : Student
+﻿namespace LearningCSharp;
+
+public class Ginger : Student
 {
     public Ginger(string name, int age, int yearGroup) : base(name, age, yearGroup)
     {

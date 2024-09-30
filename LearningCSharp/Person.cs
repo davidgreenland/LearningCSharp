@@ -1,6 +1,6 @@
 ﻿namespace LearningCSharp;
 
-public class Person
+public class Person: IGreetable
 {
     public string Name { get; set; }
 

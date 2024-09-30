@@ -7,9 +7,9 @@ public static class LoopDemonstration
         Console.WriteLine("The following numbers are printed with a for loop:");
         for (var i = 1; i <= length; ++i)
         {
-            Console.WriteLine(i);
+            Console.Write(i + " ");
         }
-        Console.WriteLine();
+        Console.WriteLine(Environment.NewLine);
     }
 
     public static void WhileLoop(int start, int end, int increment)
@@ -18,11 +18,11 @@ public static class LoopDemonstration
         var i = start;
         while (i <= end)
         {
-            Console.Write($"{i} ");
+            Console.Write(i + " ");
             i += increment;
         }
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine(Environment.NewLine);
+
     }
 
     public static void DoWhileLoop(int start, int end, int increment = 1)
@@ -31,10 +31,9 @@ public static class LoopDemonstration
         var i = start;
         do
         {
-            Console.Write($"{i} ");
+            Console.Write(i + " ");
             i += increment;
         } while (i <= end);
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine(Environment.NewLine);
     }
 }
