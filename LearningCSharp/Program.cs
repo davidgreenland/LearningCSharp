@@ -15,11 +15,11 @@ var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 
 var numericVariables = new NativeVariables(numericValues);
 var moreVariables = new NativeVariables(otherObjects);
-var adult = new Person("Philippa", 30);
-var student = new Student("James", 14, 10);
-var gingerStudent = new Ginger("Rosanne", 12, 9);
-var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
-var terminator = new Cyborg("Arnold", 1984, "T800");
+var adult = new Person("Philippa", 30, new Greeter());
+var student = new Student("James", 14, 10, new Greeter());
+var gingerStudent = new Ginger("Rosanne", 12, 9, new Greeter());
+var teacher = new Teacher("Mr Grimes", 56, "Mathematics", new Greeter());
+var terminator = new Cyborg("Arnold", 1984, "T800", new Greeter());
 var people = new IGreetable[] { adult, student, gingerStudent, teacher, terminator };
 
 numericVariables.PrintDefinitions();

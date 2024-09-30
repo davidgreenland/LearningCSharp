@@ -2,7 +2,7 @@
 
 public class Ginger : Student
 {
-    public Ginger(string name, int age, int yearGroup) : base(name, age, yearGroup)
+    public Ginger(string name, int age, int yearGroup, IGreeter greeter) : base(name, age, yearGroup, greeter)
     {
         HairColour = "ginger";
     }
@@ -10,6 +10,6 @@ public class Ginger : Student
     public override void Greet()
     {
         base.Greet();
-        Greeter.Greet($"I have flowing locks of {HairColour} hair");
+        _greeter.Greet($"I have flowing locks of {HairColour} hair");
     }
 }

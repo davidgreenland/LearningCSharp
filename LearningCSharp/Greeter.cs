@@ -1,8 +1,8 @@
 ﻿namespace LearningCSharp;
 
-public class Greeter
+public class Greeter : IGreeter
 {
-    public static void Greet(string greeting)
+    public void Greet(string greeting)
     {
         Console.WriteLine(greeting);
     }
