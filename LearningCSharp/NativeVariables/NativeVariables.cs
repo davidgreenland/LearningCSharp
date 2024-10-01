@@ -2,7 +2,7 @@
 
 public class NativeVariables
 {
-    public IEnumerable<object> Variables { get; set; }
+    private readonly IEnumerable<object> Variables;
     private readonly IDefinitionPrinter _printer;
 
     public NativeVariables(IEnumerable<object> variables, IDefinitionPrinter printer)
