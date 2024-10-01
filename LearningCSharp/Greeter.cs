@@ -1,6 +1,6 @@
 ﻿namespace LearningCSharp;
 
-public class Greeter : IGreeter
+public class ConsoleGreeter : IGreeter
 {
     public void Greet(string greeting)
     {
