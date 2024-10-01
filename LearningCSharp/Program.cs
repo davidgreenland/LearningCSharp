@@ -1,4 +1,5 @@
 ﻿using LearningCSharp;
+using LearningCSharp.NativeVariables;
 
 var year = 2024;
 var floatingPoint = 5.4f;
@@ -13,8 +14,8 @@ var numericValues = new object[] { year, floatingPoint, monthlySalary, binaryLit
 var otherObjects = new object[] { letter, monthlySalaryAsString, isWarm, todaysDate };
 var numberSet = new int[] { 2, 5, 7, 9, 13, 3 };
 
-var numericVariables = new NativeVariables(numericValues);
-var moreVariables = new NativeVariables(otherObjects);
+var numericVariables = new NativeVariables(numericValues, new DefinitionPrinter());
+var moreVariables = new NativeVariables(otherObjects, new DefinitionPrinter());
 var adult = new Person("Philippa", 30);
 var student = new Student("James", 14, 10);
 var gingerStudent = new Ginger("Rosanne", 12, 9);
