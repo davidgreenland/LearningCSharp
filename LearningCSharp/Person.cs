@@ -1,9 +1,8 @@
 ﻿namespace LearningCSharp;
 
-public class Person: IGreetable
+public class Person : IGreetable
 {
     public string Name { get; set; }
-
     protected string HairColour = "not provided";
 
     private int _age;
@@ -26,5 +25,5 @@ public class Person: IGreetable
     }
 
     public virtual void Greet() =>
-        Console.WriteLine($"Pleased to meet you. My name is {Name}.");
+        Greeter.Greet($"Pleased to meet you. My name is {Name}.");
 }

@@ -1,6 +1,6 @@
-﻿using LearningCSharp;
+﻿namespace LearningCSharp;
 
-public class Cyborg: IGreetable
+public class Cyborg : IGreetable
 {
     public string Name { get; private set; }
     public int YearOfManufacture { get; private set; } = DateTime.Now.Year;
@@ -14,5 +14,5 @@ public class Cyborg: IGreetable
     }
 
     public void Greet() =>
-        Console.WriteLine($"My name is {Name}. I am a {Model}");
+        Greeter.Greet($"Hasta la vista");
 }

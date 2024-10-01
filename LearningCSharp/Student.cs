@@ -12,6 +12,6 @@ public class Student : Person
 
     public override void Greet()
     {
-        Console.WriteLine($"My Name is {Name}. I am a student in Year {YearGroup}.");
+        Greeter.Greet($"My Name is {Name}. I am a student in Year {YearGroup}.");
     }
 }

@@ -19,7 +19,7 @@ var adult = new Person("Philippa", 30);
 var student = new Student("James", 14, 10);
 var gingerStudent = new Ginger("Rosanne", 12, 9);
 var teacher = new Teacher("Mr Grimes", 56, "Mathematics");
-var terminator = new Cyborg("Arnold", 1985, "T1000");
+var terminator = new Cyborg("Arnold", 1984, "T800");
 var people = new IGreetable[] { adult, student, gingerStudent, teacher, terminator };
 
 numericVariables.PrintDefinitions();

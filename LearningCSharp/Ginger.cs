@@ -10,6 +10,6 @@ public class Ginger : Student
     public override void Greet()
     {
         base.Greet();
-        Console.WriteLine($"I have flowing locks of {HairColour} hair");
+        Greeter.Greet($"I have flowing locks of {HairColour} hair");
     }
 }

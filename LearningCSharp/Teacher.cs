@@ -11,6 +11,6 @@ public class Teacher : Person
 
     public override void Greet()
     {
-        Console.WriteLine($"Hello, my name is {Name}. I work in the {Department} department.");
+        Greeter.Greet($"Hello, my name is {Name}. I work in the {Department} department.");
     }
 }
