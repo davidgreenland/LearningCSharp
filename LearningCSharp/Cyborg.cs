@@ -7,7 +7,7 @@ public class Cyborg : IGreetable
     public string Model { get; private set; }
     public readonly IGreeter _greeter;
 
-    public Cyborg(string name, int yearOfManufacture, string model, IGreeter greeter )
+    public Cyborg(string name, int yearOfManufacture, string model, IGreeter greeter)
     {
         Name = name;
         YearOfManufacture = yearOfManufacture;
